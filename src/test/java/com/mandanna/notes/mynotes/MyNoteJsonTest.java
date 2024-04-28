@@ -23,5 +23,20 @@ public class MyNoteJsonTest {
         assertThat(myNoteJson.write(myNote)).isStrictlyEqualToJson("expected.json");
     }
 
+    @Test
+    void myNoteDeSerializationTest()throws IOException{
+        String expected = """
+                {
+                  "id": 1,
+                  "title": "Hello",
+                  "content": "World"
+                }
+                """;
+        MyNote myNote = new MyNote(1L,"Hello", "World");
+        assertThat(myNoteJson.parse(expected)).isEqualTo(myNote);
+        assertThat(myNoteJson.parseObject(expected).id()).isEqualTo(1L);
+        assertThat(myNoteJson.parseObject(expected).title()).isEqualTo("Hello");
+        assertThat(myNoteJson.parseObject(expected).content()).isEqualTo("World");
 
+    }
 }
