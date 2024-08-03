@@ -11,7 +11,10 @@ public class MyNoteController {
 
     @GetMapping("/cashcards/{requestedId}")
     private ResponseEntity<MyNote> findNoteById(@PathVariable Long requestedId){
-        MyNote myNote = new MyNote(1L,"abc","hello world");
-        return ResponseEntity.ok(myNote);
+        if(requestedId.equals(1)) {
+            MyNote myNote = new MyNote(1L, "abc", "hello world");
+            return ResponseEntity.ok(myNote);
+        }
+        return ResponseEntity.notFound().build();
     }
 }
