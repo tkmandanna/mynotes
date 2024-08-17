@@ -1,8 +1,6 @@
 package com.mandanna.notes.mynotes.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import org.springframework.data.annotation.Id;
 
-@Entity
 public record MyNote(@Id Long id, String title, String content) {
 }

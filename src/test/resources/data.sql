@@ -1,5 +1,5 @@
-INSERT INTO note (id, title, content) VALUES (1, 'USA', 'Washington DC');
-INSERT INTO note (id, title, content) VALUES (2, 'France', 'Paris');
-INSERT INTO note (id, title, content) VALUES (3, 'Brazil', 'Brasilia');
-INSERT INTO note (id, title, content) VALUES (4, 'Italy', 'Rome');
-INSERT INTO note (id, title, content) VALUES (5, 'Canada', 'Ottawa');
+INSERT INTO MY_NOTE (ID, TITLE, CONTENT) VALUES (1, 'Hello', 'World');
+INSERT INTO MY_NOTE (ID, TITLE, CONTENT) VALUES (2, 'France', 'Paris');
+INSERT INTO MY_NOTE (ID, TITLE, CONTENT) VALUES (3, 'Brazil', 'Brasilia');
+INSERT INTO MY_NOTE (ID, TITLE, CONTENT) VALUES (4, 'Italy', 'Rome');
+INSERT INTO MY_NOTE (ID, TITLE, CONTENT) VALUES (5, 'Canada', 'Ottawa');
