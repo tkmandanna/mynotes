@@ -1,4 +1,6 @@
 package com.mandanna.notes.mynotes.model;
 
-public record MyNote(Long id,String title, String content) {
+import org.springframework.data.annotation.Id;
+
+public record MyNote(@Id Long id, String title, String content) {
 }
